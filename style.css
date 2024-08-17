@@ -6,8 +6,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(112, 128, 144);
 }
 
-h1 {
-    padding-top: 100px;
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: rgb(159, 169, 180);
 }
