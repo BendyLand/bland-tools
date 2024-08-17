@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blmake-style.css">
+    <title>blmake</title>
+</head>
+<body>
+    <div id="main">
+
+        <h1>blmake</h1>
+        <em>This project is in its very early stages and is non-functional as of 8/13/24</em>
+        
+        <p>A simple and straightforward build tool for C/C++!</p>
+        
+        <h2>About</h2>
+        <p>
+            <em>blmake</em> is the third and final project in my series of build tools.<br>
+            The other two (<em>blrun</em> and <em>blbld</em>), are meant for smaller projects, while blmake is designed for larger, more complex projects.<br>
+            Although blmake has a steeper learning curve, it offers more functionality for situations where the other tools fall short.<br>
+            My goal is for it to be far simpler to use than traditional build tools like CMake.
+        </p>
+        
+        <div class="lists">
+                <p>Here is a quick overview of all three tools:</p>
+                <strong>blrun</strong>
+                <ul>
+                    <li>The smallest of the build tools.</li>
+                    <li>Use for small compiled projects that don't include external dependencies.</li>
+                    <li>There may be several files.</li>
+                    <li>There is only a command to compile and run the project.</li>
+                </ul>
+                
+                <strong>blbld</strong>
+                <ul>
+                    <li>A moderate sized build tool.</li>
+                    <li>Use for projects that may have extra includes (-I) or for projects with a slightly more in depth directory structure.</li>
+                    <li>There may be several files and basic dependencies, like an extra Include path.</li>
+                    <li>There are more commands to compile individual files, compile everything to an object file (.o), compile everything directly, etc.</li>
+                </ul>
+                
+                <strong>blmake</strong> (this project) 
+                <ul>
+                    <li>The largest of the build tools.</li>
+                    <li>Use for projects that would normally warrant the usage of something like CMake.</li>
+                    <li>*Commands TBD*</li>
+                    <li>Rather than defining its own custom syntax, `blmake` expects a lua file called "blmake.lua".</li>
+                </ul>
+                <a href="index.html">Back to <em>Bland Tools</em>!</a>
+            </div>
+        </div>
+    </body>
+</html>
+        
