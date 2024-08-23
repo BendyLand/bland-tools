@@ -9,11 +9,13 @@
 <body>
     <div id="main">
         <h1>blrun</h1>
-        <p>A spiritual successor to <a href="https://github.com/BendyLand/blbuild">blbuild</a> (and is somehow working before it 😅),<br>
-            <em>blrun</em> is a simple run tool which automates the process of building and running compiled code.</p>
+        <h2 id="github"><a href="https://github.com/BendyLand/blrun">See it on GitHub!</a></h2>
+        <p>A spiritual successor to <a href="blbld.html">blbuild</a> (and is somehow working before it 😅),<br>
+        <em>blrun</em> is a simple run tool which automates the process of building and running compiled code.</p>
             
-            <h2>Usage</h2>
-            <p><em>blrun</em> utilizes a TOML file for the configuration of the build and run steps. The basic structure is as follows:</p>
+        <h2>Usage</h2>
+        <p><em>blrun</em> utilizes a TOML file for the configuration of the build and run steps. The basic structure is as follows:</p>
+        <div class="code">
             <code>
                 compiler = ""<br>
                 path = ""<br>
@@ -21,10 +23,12 @@
                 extras = ""<br>
                 run = ""
             </code>
-            <p>If a file called "blrun.toml" does not exist in the project's root directory,<br>
-            then the program will prompt you for each value and generate one automatically.</p>
-                
-            <h2>Examples</h2>
+        </div>
+        <p>If a file called "blrun.toml" does not exist in the project's root directory,<br>
+        then the program will prompt you for each value and generate one automatically.</p>
+            
+        <h2>Examples</h2>
+        <div class="code">
             <code>
                 # blrun.toml, placed in the root directory of the project<br>
                 compiler = "gcc"<br>
@@ -36,6 +40,8 @@
                 # gcc main.c<br>
                 # ./a.out<br><br>
             </code>
+        </div>
+        <div class="code">
             <code>
                 # blrun.toml<br> 
                 compiler = "g++ --std=c++20"<br> 
@@ -46,6 +52,8 @@
                 # g++ --std=c++20 files/one.cpp files/two.cpp files/three.cpp -o run<br> 
                 # ./run<br><br>
             </code>
+        </div>
+        <div class="code">
             <code>
                 # blrun.toml<br>
                 compiler = "scalac"<br>
@@ -56,7 +64,8 @@
                 # scalac src/main/Main.scala src/main/Utils.scala -d src/build<br>
                 # scala -classpath src/build main.run<br><br>
             </code>
-            <a href="index.html">Back to <em>Bland Tools</em>!</a>
         </div>
-    </body>
+        <a href="index.html">Back to <em>Bland Tools</em>!</a>
+    </div>
+</body>
 </html>

@@ -16,3 +16,17 @@ body {
     border-radius: 25px;
 }
 
+
+#github {
+    font-size: 15px;
+}
+
+div.code {
+    font-family: Consolas,"courier new";
+    background-color: rgb(196, 207, 217);
+    padding: 2px;
+    padding-left: 5px;
+    margin-bottom: 2px;
+    font-size: 105%;
+    border-radius: 3px;
+}

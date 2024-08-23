@@ -9,6 +9,7 @@
 <body>
     <div id="main">
         <h1>Bland Build Tool (blbld)</h1>
+        <h2 id="github"><a href="https://github.com/BendyLand/blbld">See it on GitHub!</a></h2>
         <p>A simple build tool for C/C++ projects!</p>
 
         <h2>Usage</h2>
@@ -61,62 +62,73 @@
         <h2>Examples</h2>
         <em>This project contains a `test` directory with some simple C++ files. To reset this directory, run `rm test/*.o test/main`.</em>
         <p>The simplest way to run the project is with Go's toolchain:</p>
-
         <em>No arguments</em><br>
-        <code>
-            go run .<br>
-            # will run:<br>
-            g++ -std=c++20 test/one.cpp test/two.cpp test/three.cpp -o main<br>
-            # and produce:<br>
-            # test/main (an executable binary)<br><br>
-        </code>
-
+        <div class="code">
+            <code>
+                go run .<br>
+                # will run:<br>
+                g++ -std=c++20 test/one.cpp test/two.cpp test/three.cpp -o main<br>
+                # and produce:<br>
+                # test/main (an executable binary)<br>
+            </code>
+        </div>
+        <br>
         <em>Compiling all files:</em><br>
-        <code>
-            go run . compile<br>
-            # will run:<br>
-            g++ -std=c++20 -c test/one.cpp test/two.cpp test/three.cpp<br>
-            # and produce:<br>
-            # test/one.o test/two.o test/three.o<br><br>
-        </code>
-
+        <div class="code">
+            <code>
+                go run . compile<br>
+                # will run:<br>
+                g++ -std=c++20 -c test/one.cpp test/two.cpp test/three.cpp<br>
+                # and produce:<br>
+                # test/one.o test/two.o test/three.o<br>
+            </code>
+        </div>
+        <br>
         <em>Compiling single file:</em><br>
-        <code>
-            go run . compile two.cpp<br>
-            # will print:<br>
-            # Compiling 'two.cpp'... <br>
-            # and produce:<br>
-            # test/two.o<br><br>
-        </code>
-
+        <div class="code">
+            <code>
+                go run . compile two.cpp<br>
+                # will print:<br>
+                # Compiling 'two.cpp'... <br>
+                # and produce:<br>
+                # test/two.o<br>
+            </code>
+        </div>
+        <br>
         <em>Building compiled files:</em><br>
-        <code>
-            go run . build mv<br>
-            # will run: br>
-            g++ -std=c++20 test/*.o -o main<br>
-            # and produce:<br>
-            # test/main (an executable binary)<br><br>
-        </code>
-
+        <div class="code">
+            <code>
+                go run . build mv<br>
+                # will run: br>
+                g++ -std=c++20 test/*.o -o main<br>
+                # and produce:<br>
+                # test/main (an executable binary)<br>
+            </code>
+        </div>
+        <br>
         <em>Updating single file:</em><br>
-        <code>
-            go run . update two.cpp<br>
-            # will print:<br>
-            # Compiling 'two.cpp'... <br>
-            # and produce:<br>
-            # test/two.o<br>
-            # then it will run: br>
-            g++ -std=c++20 test/*.o -o main<br>
-            # and produce:<br>
-            # main (an executable binary)<br><br>
-        </code>
-
+        <div class="code">
+            <code>
+                go run . update two.cpp<br>
+                # will print:<br>
+                # Compiling 'two.cpp'... <br>
+                # and produce:<br>
+                # test/two.o<br>
+                # then it will run: br>
+                g++ -std=c++20 test/*.o -o main<br>
+                # and produce:<br>
+                # main (an executable binary)<br>
+            </code>
+        </div>
+        <br>
         <em>Printing the full command:</em><br>
-        <code>
-            go run . print<br>
-            # will print:<br>
-            g++ -std=c++20 bigtest/src/*.o -I bigtest/src/include -o main<br><br>
-        </code>
+        <div class="code">
+            <code>
+                go run . print<br>
+                # will print:<br>
+                g++ -std=c++20 bigtest/src/*.o -I bigtest/src/include -o main<br>
+            </code>
+        </div>
 
         <h2>Future Plans</h2>
 
