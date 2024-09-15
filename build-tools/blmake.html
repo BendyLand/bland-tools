@@ -10,15 +10,15 @@
     <div id="main">
 
         <h1>blmake</h1>
-        <em>This project is in its very early stages and is non-functional as of 8/13/24</em>
+        <em>This project is in its fairly early stages as of Sep. 7, 2024. Functionality is limited and unpredictable.</em>
         
         <p>A simple and straightforward build tool for C/C++!</p>
         
         <h2>About</h2>
         <p>
-            <em>blmake</em> is the third and final project in my series of build tools.<br>
-            The other two (<em>blrun</em> and <em>blbld</em>), are meant for smaller projects, while blmake is designed for larger, more complex projects.<br>
-            Although blmake has a steeper learning curve, it offers more functionality for situations where the other tools fall short.<br>
+            <em>blmake</em> is the third and final project in my series of build tools.
+            The other two (<em>blrun</em> and <em>blbld</em>), are meant for smaller projects, while blmake is designed for larger, more complex projects.
+            Although blmake has a steeper learning curve, it offers more functionality for situations where the other tools fall short.
             My goal is for it to be far simpler to use than traditional build tools like CMake.
         </p>
         
@@ -44,10 +44,16 @@
                 <ul>
                     <li>The largest of the build tools.</li>
                     <li>Use for projects that would normally warrant the usage of something like CMake.</li>
-                    <li>*Commands TBD*</li>
-                    <li>Rather than defining its own custom syntax, `blmake` expects a lua file called "blmake.lua".</li>
+                    <li>Rather than defining its own custom syntax, `blmake` will expect a lua file called "blmake.lua".</li>
+                    <li>There are commands to generate the config file and [will be commands to] run various parts of the build process.</li>
+                    <ul>
+                        <li>The command to generate a config file is `blmake gen [option]`.</li>
+                        <li>The options are: `full`, `build`, `simple`, `tiny`, and `test`. Leaving the option blank will default to `full`.</li>
+                        <li><em><strong>Note:</strong> The command `blmake` is not available by default on your system. You will need to build the project, rename the binary, and give it executable permissions to use it in this way.</em></li>
+                    </ul>
+                    <li><em>Build commands TBD.</em></li>
                 </ul>
-                <a href="index.html">Back to <em>Bland Tools</em>!</a>
+                <a href="../index.html">Back to <em>Bland Tools</em>!</a>
             </div>
         </div>
     </body>

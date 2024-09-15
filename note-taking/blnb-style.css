@@ -1,0 +1,31 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(112, 128, 144);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main {
+    background-color: rgb(159, 169, 180);
+    padding: 25px 75px;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+
+#github {
+    font-size: 15px;
+}
+
+div.code {
+    font-family: Consolas,"courier new";
+    background-color: rgb(196, 207, 217);
+    padding: 2px;
+    padding-left: 5px;
+    margin-bottom: 2px;
+    font-size: 105%;
+    border-radius: 3px;
+}
